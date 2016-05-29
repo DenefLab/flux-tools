@@ -12,22 +12,14 @@
 
 Arc-ts describes how to set up a flux account [here](http://arc-ts.umich.edu/flux-user-guide/). Follow steps 1-4 before moving onto any other lesson.
 
-A couple of notes:
 
-1) I recommend the software mtoken. 
-
-2)
-
-3) 
+**Note:** I recommend the software mtoken. Then you don't have to keep track of it!
 
 
-
-
-
-# Other useful software
+------------
 
 There are some other software programs that will make your life much easier 
-while working with flux
+while working with flux.
 
 ## Cyberduck
 
@@ -35,7 +27,7 @@ Cyberduck is a GUI program that allows you to connect to a remote server and
 transfer files between a remote server and local machine. You can essentially 
 drag and drop files from your flux account onto your computer. 
 
-You can download Cyberduck [here](https://cyberduck.io/?l=en)
+**You can download Cyberduck [here](https://cyberduck.io/?l=en).**
 
 ### Configuration
 
@@ -48,10 +40,11 @@ You will need to configure Cyberduck to access your flux account
 3) Enter the location of the server you are trying to connect to
   * The Server address is flux-xfer.arc-ts.umich.edu
   * The path depends on where you want to connect. I have bookmarks for my home
-  directory and scratch drive, but I almost exclusively use the scratch drive which would be: /scratch/lsa_fluxm/michberr
+  directory and scratch drive, but I almost exclusively use the scratch drive which would be: /scratch/lsa_fluxm/michberr.
   
   ![cyberduck](../images/cyberduck.png)
 
+------------
 ## Globus
 
 Globus is similar to cyberduck in that it provides a GUI for transferring 
@@ -71,4 +64,17 @@ personal endpoint on your own computer.
 3) Globus is accessed through a web browser. If you are transferring files between
 two remote servers, once you have submitted the transfer request, you can close your computer :) 
 
-You can download and register for Globus [here](https://www.globus.org/globus-connect-personal)
+**You can download and register for a Globus personal endpoint [here](https://www.globus.org/globus-connect-personal).**
+
+Once you have Globus downloaded, you can access a web page to transfer files between 
+remote servers and your personal machine using aliases. For example, flux is accessible 
+through the alias "umich#flux". You can set an alias for your own computer.
+In the example below, it is simply called "laptop".
+
+![globus](../images/globus.png)       
+
+     
+
+      
+      
+          
