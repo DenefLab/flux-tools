@@ -17,9 +17,9 @@ Using flux for microbiome analysis
 1. [Lesson 01 Getting started](lessons/01-getting-started.html)
 2. [Lesson 02 Logging in](lessons/02-login.html)
 3. [Lesson 03 Running flux jobs](lessons/03-jobs.html)
-4. [Lesson 03 Running mothur on flux](lessons/03-running-mothur.html)
-5. [Lesson 04 Executing many large memory jobs](lessons/04-for-loops.html)
-6. [Lesson 05 Executing many low memory jobs](lessons/05-job-arrays.html)
+4. [Lesson 04 Running mothur on flux](lessons/04-running-mothur.html)
+5. [Lesson 05 Executing many large memory jobs](lessons/05-for-loops.html)
+6. [Lesson 06 Executing many low memory jobs](lessons/06-job-arrays.html)
 
 ## Getting flux help:
 The flux support at UM is terrific! If you're having an issue or you want to have some software installed on flux, send them an 
