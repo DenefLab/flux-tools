@@ -4,7 +4,6 @@
 >
 > * Demonstrate how to log into FLUX
 > * Provide some useful aliases to make login easier
-> * 
 
 
 
@@ -15,7 +14,7 @@
 You will need to log into flux using a command-line terminal. If you have a mac machine, open your terminal program. On a PC you will need to download an external emulator program like [cygwin](https://www.cygwin.com/).
 
 If you are logging into FLUX from off campus, you will need to set up a VPN.
-Information on this is available [here]([here](http://arc-ts.umich.edu/flux-user-guide/))
+Information on this is available [here](http://arc-ts.umich.edu/flux-user-guide/).
 
 
 To log into FLUX, use the following command:   
@@ -29,11 +28,14 @@ your password will not appear on the screen but it is there.
 
 ![login](../images/login.png)
 
+
+------------
+
 # Easier login
 If you are logging into flux frequently, it can be cumbersome to type this in all the time. Therefore, i recommend you create some aliases in your bash profile. 
 
 
-Navigate to your home directory      
+Navigate to your home directory:      
 
 ```{r}
 # cd with no argument will take you to your home
@@ -43,7 +45,7 @@ cd
 pwd
 ```
     
-See if you have a file called `.bash_profile`. If not, make a file.
+See if you have a file called `.bash_profile`, and if not, make a file:
 
 ```{r}
 # List all files in your current directory (including files starting with '.')
@@ -56,16 +58,24 @@ touch .bash_profile
 nano .bash_profile
 ```
 
-Add these lines to your file and save. **Note:** The alias for the mtoken will
-only work for a Mac. If you have a PC, you will need to obtain the path to your program. 
+Add these lines to your file (make sure to change to your uniq name!) and save.        
+**Note:** The alias for the mtoken will only work for a Mac. 
+If you have a PC, you will need to obtain the path to your program. 
 ```{r}
 # login to flux
-alias flux='ssh -l michberr flux-login.arc-ts.umich.edu'
+alias flux='ssh -l your-uniq-name flux-login.arc-ts.umich.edu'
 
 # Open RSA SecurID
 alias mtoken='open -a /Applications/SecurID.app'
 
 ```
 
-Now, when you want to login to flux, you only have to type `mtoken` to start up your SecurID program and `flux` to initiate the login process!
+![bash](../images/bash-profile.png)
+
+Now, when you want to login to flux, you only have to type **`mtoken`** to start up your SecurID program and **`flux`** to initiate the login process!      
+
+       
+------------
+     
+              
 
