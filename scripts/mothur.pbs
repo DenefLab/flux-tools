@@ -1,0 +1,28 @@
+####  PBS preamble
+#PBS -N mothur
+#PBS -M michberr@umich.edu
+#PBS -m ae
+
+#PBS -l nodes=1:ppn=30,mem=600gb,walltime=36:00:00
+#PBS -V
+
+#PBS -A vdenef_fluxm
+#PBS -l qos=flux
+#PBS -q fluxm
+
+####  End PBS preamble
+
+#  Show list of CPUs you ran on, if you're running under PBS
+if [ -n "$PBS_NODEFILE" ]; then cat $PBS_NODEFILE; fi
+
+#  Change to the directory you submitted from
+if [ -n "$PBS_O_WORKDIR" ]; then cd $PBS_O_WORKDIR; fi
+pwd
+
+#  Modules required
+# module load med
+# module load mothur/1.34.3
+
+
+#  Put your job commands after this line
+mothur mothur.batch
