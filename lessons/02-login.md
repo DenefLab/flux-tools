@@ -3,6 +3,7 @@
 > ## Objectives
 >
 > * Demonstrate how to log into FLUX
+> * Describe how to navigate in FLUX
 > * Provide some useful aliases to make login easier
 
 
@@ -30,6 +31,44 @@ your password will not appear on the screen but it is there.
 
 
 ------------
+
+# Navigation
+
+Once you have logged in to FLUX, you should be in your home directory. We
+can use `pwd` to check our location:
+
+```{r}
+pwd
+```
+    
+![home](../images/home.png)
+
+You are currently on a "login node". This basically means we are on a dinky computer
+which can't do a lot of processing, but it can allow us to do some simple tasks like
+viewing files, editing files, or moving files. 
+
+I don't keep much in my home directory. When I want to run programs, I move my data
+and scripts to the scratch drive which is the fastest drive to run from. You can
+access the scratch drive both from the LSA account or if your lab has its own allcoation:
+
+```{r}
+# Navigate to LSA's scratch drive
+cd /scratch/lsa_fluxm/your-uniq-name
+
+# Navigate to the Denef lab scratch drive
+cd /scratch/vdenef_fluxm/your-uniq-name
+```
+
+However, you might have seen in the login message that both the home and scratch
+drives are NOT for longterm data storage. FLUX will actually delete your files if
+you leave them on the scratch drive for longer than 3 months without touching them.
+They will send you a couple of warning emails beforehand, though. 
+
+Therefore, it's best
+to have another server (the Denef lab has an nfs drive) that is designed for storage.
+After you run your analysis, you should get into the habit of transferring all of
+your results to this alternative location and removing it from the scratch drive
+
 
 # Easier login
 If you are logging into flux frequently, it can be cumbersome to type this in all the time. Therefore, i recommend you create some aliases in your bash profile. 
