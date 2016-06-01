@@ -47,8 +47,9 @@ You are currently on a "login node". This basically means we are on a dinky comp
 which can't do a lot of processing, but it can allow us to do some simple tasks like
 viewing files, editing files, or moving files. 
 
-I don't keep much in my home directory. When I want to run programs, I move my data
-and scripts to the scratch drive which is the fastest drive to run from. You can
+I don't keep much in my home directory. The only things I store there are a copy of
+my scripts and a .bash_profile with some helpful aliases. When I want to run programs, I copy my data
+and scripts to the scratch drive which is the fastest drive to run programs from. You can
 access the scratch drive both from the LSA account or if your lab has its own allcoation:
 
 ```{r}
@@ -60,14 +61,14 @@ cd /scratch/vdenef_fluxm/your-uniq-name
 ```
 
 However, you might have seen in the login message that both the home and scratch
-drives are NOT for longterm data storage. FLUX will actually delete your files if
+drives are NOT for longterm data storage. In fact, FLUX will delete your files if
 you leave them on the scratch drive for longer than 3 months without touching them.
 They will send you a couple of warning emails beforehand, though. 
 
 Therefore, it's best
 to have another server (the Denef lab has an nfs drive) that is designed for storage.
 After you run your analysis, you should get into the habit of transferring all of
-your results to this alternative location and removing it from the scratch drive
+your results to this alternative location and removing it from the scratch drive.
 
 
 # Easier login
