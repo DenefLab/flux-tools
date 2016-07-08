@@ -24,7 +24,7 @@ drive for processing.
 
 # Mothur batch script 
 
-[Here](https://github.com/DenefLab/flux-tools/gh-pages/scripts/mothur.batch) is a link to an example mothur batch file, following the SOP. Please refer
+[Here](https://github.com/DenefLab/flux-tools/blob/gh-pages/scripts/mothur.batch) is a link to an example mothur batch file, following the SOP. Please refer
 to the mothur wiki for an in depth explanation of the commands. 
 
 You can copy it to your current flux location with:
