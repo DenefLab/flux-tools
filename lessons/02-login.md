@@ -22,13 +22,13 @@ To log into FLUX, use the following command:
 ```{r}
 ssh -l your-uniq-name flux-login.arc-ts.umich.edu
 ```
-FLUX will then ask for your mtoken. Paste it in and press enter. It will not appear on the screen, but it is there. Be patient, it might take a few minutes for the server to validate your token.
+FLUX will then ask for your password. This is your umich password. Type your password and press enter. Your password will not appear on the screen but it is there.
 
-Next, FLUX will ask for your Password. This is your umich password. Similarly,
-your password will not appear on the screen but it is there.
+Next, flux will ask for your Duo authentication code. Type it in and press enter. 
 
-![login](../images/login.png)
 
+![](../images/login.png)   
+    
 
 ------------
 
@@ -41,7 +41,8 @@ can use `pwd` to check our location:
 pwd
 ```
     
-![home](../images/home.png)
+![](../images/home.png)    
+     
 
 You are currently on a "login node". This basically means we are on a dinky computer
 which can't do a lot of processing, but it can allow us to do some simple tasks like
@@ -99,20 +100,17 @@ nano .bash_profile
 ```
 
 Add these lines to your file (make sure to change to your uniq name!) and save.        
-**Note:** The alias for the mtoken will only work for a Mac. 
-If you have a PC, you will need to obtain the path to your program. 
+
 ```{r}
 # login to flux
 alias flux='ssh -l your-uniq-name flux-login.arc-ts.umich.edu'
 
-# Open RSA SecurID
-alias mtoken='open -a /Applications/SecurID.app'
-
 ```
 
-![bash](../images/bash-profile.png)
+![](../images/bash-profile.png)    
+    
 
-Now, when you want to login to flux, you only have to type **`mtoken`** to start up your SecurID program and **`flux`** to initiate the login process!      
+Now, when you want to login to flux, you only have to  **`flux`** to initiate the login process!      
 
        
 ------------
